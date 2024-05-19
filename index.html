@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <aside class="dashboard">
+      <h1>Projects</h1>
+      <button id="addproject" class="button">Add Project</button>
+      <button id="addtasks" class="button">Add Tasks</button>
+      <div class="proj"></div>
+    </aside>
+    <main id="tasks" class="tasks-container"></main>
+  </div>
+
+  <dialog id="dialog">
+    <h2>Add Task</h2>
+    <form>
+      <label for="title">Title</label>
+      <input type="text" id="title" required>
+      
+      <label for="description">Description</label>
+      <input type="text" id="description" required>
+
+      <label for="duedate">Due Date</label>
+      <input type="date" id="duedate" required>
+
+      <label for="project">Project</label>
+      <select id="project" required></select>
+      
+      <button id="submit" class="button">Add Task</button>
+    </form>
+  </dialog>
+
+  <dialog id="dialog1">
+    <h2>Add Project</h2>
+    <form>
+      <label for="name">Project Name</label>
+      <input type="text" id="name" required>
+      <button id="submit1" class="button">Add Project</button>
+    </form>
+  </dialog>
+
+  <script src="index.js"></script>
+</body>
+</html>

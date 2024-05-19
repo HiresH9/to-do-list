@@ -1,0 +1,145 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Font */
+
+
+/* HTML and Body */
+html, body {
+    font-family: 'myfont', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Dashboard Styling */
+.dashboard {
+    width: 300px;
+    background-color: #1e90ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.dashboard h1 {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #fff;
+    color: #1e90ff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #dcdcdc;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.proj div {
+    background-color: #fff;
+    color: #1e90ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.proj div:hover {
+    background-color: #dcdcdc;
+}
+
+.proj button {
+    background-color: transparent;
+    border: none;
+    color: #ff6347;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Tasks Container */
+.tasks-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tasks-container div {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dialog Styles */
+dialog {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+dialog h2 {
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+dialog label {
+    margin-bottom: 5px;
+}
+
+dialog input,
+dialog select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+dialog button {
+    align-self: center;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #0f6bff;
+}
